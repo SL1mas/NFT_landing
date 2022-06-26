@@ -243,6 +243,7 @@ body {
 .NFT_line_up {
   display: flex;
 }
+/* footer styles  */
 footer p:last-child {
 display: none;
 }
@@ -271,4 +272,56 @@ footer .sign_up_left button {
   position: relative;
   border-top: 1px solid lightgray;
 }
+footer nav {
+margin-top: 34px;
+}
+.social_media {
 
+}
+.social_media img {
+  width: 18px;
+  height: 18px;
+  padding: 10px;
+}
+.social_media img:first-child {
+  padding: 10px 10px 10px 0;
+}
+.nav_left p {
+  font-size: 20px;
+  color: #555555;
+}
+.nav_right {
+  margin: 40px 0;
+}
+.nav_right div {
+  width: 120px;
+  color: #555555;
+}
+.nav_right a {
+  padding: 0 5px 5px 0;
+  font-size: 20px;
+  color: #555555;
+  text-decoration: none;
+}
+.nav_right h1 {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.nav_right div {
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.nav_right {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer p {
+  font-size: 20px;
+  color: #555555;
+}
