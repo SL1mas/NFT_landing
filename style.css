@@ -12,10 +12,10 @@ body {
     display: none;
   }
  
-  /* grid styles */
- /* .icon {
-    width: 40px;
-    height: 40px;
+  /* header grid styles */
+ /* .hamburger_menu {
+    width: 36px;
+    height: 36px;
   }
    .header_imgs {
     width: 100%;
@@ -23,14 +23,15 @@ body {
     grid-template-columns: 5fr 1fr 1fr 1fr 1fr 1fr;
   }
    .header_imgs a {
-    width: 100%;
+    max-width: 100%;
     grid-column: 1 / 2
   }
   .header_imgs img {
+    max-width: 100%;
     grid-column: 9 / 10
   } */
-  /* flex styles */
-   .icon {
+  /* header flex styles */
+   .hamburger_menu {
     width: 36px;
     height: 36px;
   }
@@ -48,4 +49,71 @@ body {
     flex: 0 0.1 0;
     justify-content: left;
     align-items: flex-end;
+  }
+  /* header sign up styles grid */
+  .NFT_example {
+    width: 300px;
+    height: 300px;
+  }
+  .header_sign_up {
+    width: 100%;
+    /* height: 200px; */
+    display: grid;
+    grid-template-columns: 1fr 50%; 
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    /* grid-template-rows: 1em 3em 4em 2em; */
+  }
+  .header_sign_up img{
+    width: 100%;
+    grid-area:  1 / 2 / 4 / 3
+  }
+  .header_sign_up h6 {
+    width: 100%;
+    margin: 5px;
+    color: palevioletred;
+    grid-area:  1 / 1 / 2 / 2
+  }
+  .header_sign_up h1 {
+    width: 100%;
+    margin: 5px;
+    grid-area:  2 / 1 / 3 / 2
+  }
+  .header_sign_up p {
+    width: 100%;
+    margin: 5px;
+    color: grey;
+    grid-area:  3 / 1 / 4 / 2
+  }
+  .header_sign_up button {
+    width: 100px;
+    height: 30px;
+    margin: 0px;
+    background-color: white;
+    display: inline-block;
+    border-image: url(/Atsiskaitymas_NFT_landing/assets/background.svg) 30% round;
+    border-radius: 5em;
+    grid-area:  4 / 1 / 5 / 2
+  }
+  /* header sign up styles flex */
+  /* .header_sign_up {
+    width: 100%;
+    display: flex;
+  }
+  .no_img {
+    width: 100%;
+    flex-wrap: wrap;
+    flex: 1 1 0;
+  }
+  .NFT_example {
+    width: 150px;
+    height: 300px;
+    justify-content: right;
+  } */
+  main div p:first-child {
+    font-size: xx-large;
+  }
+  main div:first-child {
+    width: 100%;
+    background-image: url(/Atsiskaitymas_NFT_landing/assets/background.svg);
+    background-repeat: no-repeat;
   }
