@@ -52,22 +52,22 @@ body {
   .sign_up_left button {
     width: 190px;
     height: 55px;
-    margin: 0px;
-    font-size: 17px;
-    padding: 15px 0 15px 0;
+    font-size: large;
     margin-bottom: 20px;
-    background-color: white;
-    border-image: url(/Atsiskaitymas_NFT_landing/assets/background.svg) 30% round;
-    border-radius: 5em;
-  }
-  .NFT_example {
+    border: double 2px transparent;
+    border-radius: 40px;
+    background-image: linear-gradient(white, white), 
+    linear-gradient(45deg,#FF3998, 10%, #FF3939 40%, #FF8139 70%, #39FFA0 150%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  } 
+    .NFT_example {
     width: 430px;
     height: 400px;
     margin-left: -110px;
     margin-top: -70px;
     justify-content: right;
   }
-  
   /* Main styles */
   .background {
     padding: 70px 25px 10px 25px;
@@ -77,7 +77,7 @@ body {
   }
   .background p:first-child {
     margin: 0;
-    font-size: 40px;
+    font-size: 50px;
   }
   .background p:nth-child(2) {
     font-size: large;
@@ -170,33 +170,36 @@ body {
   display: flex;
 }
 /* footer styles  */
-.copyright{
-  margin: 70px 0 50px 0;
-}
-.copyright p:last-child {
-display: none;
-}
 footer {
   padding: 25px 25px 0px 25px;
   background-color: white;
   border-top: 1px solid lightgray;
 }
-.footer_img {
-  width: 300px;
-  height: 300px;
-  margin-left: -110px;
-  margin-top: 100px;
-  justify-content: right;
+footer .sign_up div {
+  margin-right: 10px;
 }
-footer .sign_up_left h1{
-margin-bottom: 20px;
+footer .sign_up_left {
+  width: 200px;
 }
-footer .sign_up_left button {
+footer .sign_up_left h1 {
+  width: 200px;
+  margin-bottom: 20px;
+}
+footer .sign_up_left p {
+  width: 200px;
+}
+footer .sign_up_left button {;
   margin-bottom: 34px;
   }
+  .footer_img {
+    display: block;
+    width: 50%;
+    min-width: 150px;
+    padding: 136px 0px 0px 0px;
+  }
 .line {
-  margin-top: 2px;
-  width: 430px;
+  margin: auto;
+  min-width:550px;
   margin-left: -25px;
   position: relative;
   border-top: 1px solid lightgray;
@@ -251,9 +254,18 @@ footer p {
   font-size: 20px;
   color: #555555;
 }
-
+.copyright{
+  margin: 70px 0 50px 0;
+}
+.copyright p:last-child {
+display: none;
+}
 /* Desktop version */
 @media screen and (min-width: 550px) {
+  header, main, footer {
+    padding: 0;
+    margin: 75px;
+  }
   .top {
     width: 300px;
     display: flex;
@@ -274,19 +286,64 @@ footer p {
   .hamburger_menu {
     display: none;
   }
-  .NFT_example {
-    width: 500px;
-    height: 500px;
-    margin-top: -30px;
-    margin-left: -140px;
-  }
   .sign_up {
-    margin-top: 50px;
+    width: 100%;
+    margin-top: 150px;
     display: flex;
     justify-content: space-between;
   }
+  .sign_up_left {
+    flex: auto;
+  }
+  .sign_up_left h1 {
+    width: 60%;
+    min-width: 325px;
+    font-size: calc(35px + 3vw);
+  }
+  .sign_up_left p {
+    width: 55%;
+    min-width: 280px;
+    margin-bottom: 40px;
+  }
+  .NFT_example {
+    display: block;
+    width: 50%;
+    min-width: 450px;
+    height: 50%;
+    margin-top: -70px;
+    margin-left: -140px;
+  }
+  .background {
+    width: 100%;
+    border-radius: 15px;
+    background-position: 1px;
+    background-image: url(/Atsiskaitymas_NFT_landing/assets/background.svg);
+    padding: 150px 0px 10px 0px;
+  }
+  .background p{
+    padding-left: 50px;
+  }
+  .background p:last-child{
+    padding-bottom: 50px;
+  }
   .company {  
-    margin-left: 25px;
+    width: 97%;
+    padding: 0;
+    margin: 90px 0;
+  }
+  .section_text p {
+   margin-left: 0px;
+  }
+  .NFT_line_up {
+    padding-bottom: 75px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .NFT_style {
+    margin: 25px 5px 25px 0px;
+  }
+  .NFT_line_up div:last-child {
+    margin-right: 0px;
   }
   .opendoor {
   display: block;
@@ -301,12 +358,46 @@ footer p {
     display: none;
   }
   footer .sign_up {
+    display: flex;
+    margin-top: 0;
+    padding-top: 75px;
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
-    position: relative;
+  }
+  footer .sign_up h3 {
+    width: 80%;
+  }
+  footer .sign_up h1 {
+    width: 80%;
+  }
+  footer .sign_up p {
+    width: 80%;
+    margin-bottom: 45px;
+  }
+  footer .sign_up_left{
+    flex: auto;
+    align-self: center;
+  }
+  footer .sign_up div:last-child{
+    width: 50%;
+    align-self: flex-end;
   }
   footer {
     border-top: 0px;
+  }
+  .footer_img {
+    display: block;
+    width: 50%;
+    min-width: 182px;
+    max-width: 240px;
+    height: auto;
+    margin: -30px auto -1px auto;
+  }
+  footer nav {
+    padding-top: 75px;
+  }
+  .nav_right div:last-child {
+    margin:0;
   }
   .copyright {
     display: flex;
