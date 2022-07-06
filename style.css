@@ -1,128 +1,134 @@
 body {
-    width: 100%;
-    margin: 0 auto;
-  }
-  header {
-    padding: 25px 25px 0px 25px;
-    background-color: white;
-  }
-  .top {
-    display: none;
-  }
-  /* header flex styles */
-   .hamburger_menu {
-    width: 36px;
-    height: 36px;
-  }
-    .header_imgs {
-    width: 100%;
-    display: flex;
-  }
-   .header_imgs a {
-    max-width: 100%;
-    justify-content: right;
-    flex: 1 1 0;
-  }
-  .header_imgs img {
-    max-width: 100%;
-    flex: 0 0.1 0;
-    justify-content: left;
-    align-items: flex-end;
-  }
-  /* header sign up styles flex */
-  .sign_up {
-    margin-top: 50px;
-    display: flex;
-  }
-  .sign_up_left {
-    flex-direction: column;
-    flex: 0 0 250px;
-  }
-  .sign_up_left h3 {
-    color: #FF3998
-  }
-  .sign_up_left h1 {
-    width: 300px;
-    font-size: 50px;
-  }
-  .sign_up_left p {
-    font-size: large;
-    width: 270px;
-  }
-  .sign_up_left button {
-    width: 190px;
-    height: 55px;
-    font-size: large;
-    margin-bottom: 20px;
-    border: double 2px transparent;
-    border-radius: 40px;
-    background-image: linear-gradient(white, white), 
-    linear-gradient(45deg,#FF3998, 10%, #FF3939 40%, #FF8139 70%, #39FFA0 150%);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-  } 
-    .NFT_example {
-    width: 430px;
-    height: 400px;
-    margin-left: -110px;
-    margin-top: -70px;
-    justify-content: right;
-  }
-  /* Main styles */
-  .background {
-    padding: 70px 25px 10px 25px;
-    background-image: url(/Atsiskaitymas_NFT_landing/assets/background.svg);
-    background-repeat: no-repeat;
-    background-position: -5px;
-  }
-  .background p:first-child {
-    margin: 0;
-    font-size: 50px;
-  }
-  .background p:nth-child(2) {
-    font-size: large;
-    margin-bottom: 20px;
-  }
-  section {
-    margin-bottom: 45px;
-  }
+  width: 100%;
+  margin: 0 auto;
+}
+header,
+main,
+footer {
+  margin: 6%;
+  background-color: white;
+}
+.top {
+  display: none;
+}
+/* header flex styles */
+.hamburger_menu {
+  width: 36px;
+  height: 36px;
+}
+.header_imgs {
+  width: 100%;
+  display: flex;
+}
+.header_imgs a {
+  max-width: 100%;
+  justify-content: right;
+  flex: 1 1 0;
+}
+.header_imgs img {
+  max-width: 100%;
+  flex: 0 0.1 0;
+  justify-content: left;
+  align-items: flex-end;
+}
+/* header sign up styles flex */
+.sign_up {
+  margin-top: 15%;
+  display: flex;
+}
+.sign_up_left {
+  flex-direction: column;
+  flex: 0 0 250px;
+}
+.sign_up_left h3 {
+  color: #ff3998;
+}
+.sign_up_left h1 {
+  width: 300px;
+  font-size: 50px;
+}
+.sign_up_left p {
+  font-size: large;
+  width: 270px;
+  margin-bottom: 5%;
+}
+.sign_up_left button {
+  width: 190px;
+  height: 55px;
+  font-size: large;
+  margin-bottom: 10%;
+  border: double 2px transparent;
+  border-radius: 40px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(45deg, #ff3998, 10%, #ff3939 40%, #ff8139 70%, #39ffa0 150%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.NFT_example {
+  width: 430px;
+  height: 400px;
+  margin-left: -29%;
+  margin-top: -19%;
+  justify-content: right;
+}
+/* Main styles */
+.background {
+  margin: 0 -10%;
+  padding: 15% 10% 3% 10%;
+  background-image: url(/Atsiskaitymas_NFT_landing/assets/background.svg);
+  background-repeat: no-repeat;
+  background-position: -5px;
+}
+.background p:first-child {
+  margin: 0;S
+  font-size: 50px;
+}
+.background p:nth-child(2) {
+  font-size: large;
+}
+section {
+  margin-bottom: 45px;
+}
 .company {
   width: 100%;
-  margin: 70px 0;
-  padding-top: 25px;
+  margin: 10% 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-.boomerang, .blimp, .qrco, .droplet {
+.boomerang,
+.blimp,
+.qrco,
+.droplet,
+.opendoor {
   width: 115px;
   height: 35px;
-  padding: 5px 40px;
-  align-content: flex-start;
+  margin-top: 3%;
 }
 .boomerang {
   width: 115px;
   object-fit: cover;
   object-position: 0px;
-  align-self: center;
 }
 .opendoor {
   display: none;
 }
 .section_text p {
-  margin: 25px;
   font-size: 20px;
 }
 .section_text p:first-child {
   font-size: 50px;
 }
+.NFT_line_up {
+  display: flex;
+}
 .NFT_style {
   width: 290px;
-  margin: 25px 5px 25px 25px;
-  background-color: #EEEEEE;
+  margin: 7% 8% 7% 0;
+  background-color: #eeeeee;
   border-radius: 16px;
   display: grid;
-  grid-template-columns: 25px 120px 120px 25px; 
+  grid-template-columns: 25px 120px 120px 25px;
   grid-template-rows: 65% 10% 10% 10%;
 }
 .NFT_style img {
@@ -131,141 +137,131 @@ body {
 .NFT_style p {
   color: #777777;
   margin: 0 0 5px 0;
-  }
-.NFT_style p:nth-child(2){
+}
+.NFT_style p:nth-child(2) {
   margin-top: 25px;
-  grid-area:  2 / 2 / 3 / 3;
-  color: #FF8139;
+  grid-area: 2 / 2 / 3 / 3;
+  color: #ff8139;
   font-size: 12px;
 }
 .NFT_style p:nth-child(3) {
-  grid-area:  3 / 2 / 4 / 3;
+  grid-area: 3 / 2 / 4 / 3;
   font-size: 20px;
   color: black;
 }
 .NFT_style p:nth-child(4) {
-  grid-area:  4 / 2 / 5 / 3;
+  grid-area: 4 / 2 / 5 / 3;
   font-size: 18px;
 }
 .NFT_style p:nth-child(5) {
   margin-top: 25px;
-  grid-area:  2 / 3 / 3 / 4;
+  grid-area: 2 / 3 / 3 / 4;
   text-align: end;
   font-size: 12px;
 }
 .NFT_style p:nth-child(6) {
-  grid-area:  3 / 3 / 4 / 4;
+  grid-area: 3 / 3 / 4 / 4;
   text-align: end;
   color: black;
   font-size: 20px;
 }
 .NFT_style p:nth-child(7) {
   margin-bottom: 25px;
-  grid-area:  4 / 3 / 5 / 4;
+  grid-area: 4 / 3 / 5 / 4;
   text-align: end;
   font-size: 18px;
 }
-.NFT_line_up {
-  margin-top: 40px;
-  display: flex;
-}
 /* footer styles  */
 footer {
-  padding: 25px 25px 0px 25px;
   background-color: white;
   border-top: 1px solid lightgray;
 }
 footer .sign_up div {
-  margin-right: 10px;
+  margin-right: 3%;
 }
 footer .sign_up_left {
   width: 200px;
 }
 footer .sign_up_left h1 {
   width: 200px;
-  margin-bottom: 20px;
+  margin-bottom: 8%;
+  font-size: 50px;
 }
 footer .sign_up_left p {
   width: 200px;
 }
-footer .sign_up_left button {;
-  margin-bottom: 34px;
-  }
-  .footer_img {
-    display: block;
-    width: 50%;
-    min-width: 150px;
-    padding: 136px 0px 0px 0px;
-  }
+footer .sign_up_left button {
+  margin-bottom: 14%;
+}
+.footer_img {
+  display: block;
+  width: 50%;
+  min-width: 150px;
+  padding-top: 90%;
+}
 .line {
   margin: auto;
-  min-width:550px;
+  min-width: 550px;
   margin-left: -25px;
   position: relative;
   border-top: 1px solid lightgray;
 }
 footer nav {
-margin-top: 34px;
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-between;
 }
 .social_media img {
   width: 18px;
   height: 18px;
-  padding: 10px;
+  padding: 3%;
 }
 .social_media img:first-child {
-  padding: 10px 10px 10px 0;
+  padding: 3% 3% 3% 0;
+}
+.nav_left {
+  margin-right: 5%;
 }
 .nav_left p {
   font-size: 20px;
   color: #555555;
 }
 .nav_right {
-  margin: 40px 0;
+  margin: 11% 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 .nav_right div {
-  width: 120px;
+  width: 100px;
   color: #555555;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
 }
 .nav_right a {
-  padding: 0 5px 5px 0;
+  padding: 0 5% 5% 0;
   font-size: 20px;
   color: #555555;
   text-decoration: none;
 }
-.nav_right h1 {
-  font-size: 16px;
-  padding-bottom: 10px;
-}
+
 nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.nav_right div {
-  margin-right: 40px;
-  display: flex;
-  flex-direction: column;
-}
-.nav_right {
-  display: flex;
-  flex-wrap: wrap;
-}
 footer p {
   font-size: 20px;
   color: #555555;
 }
-.copyright{
-  margin: 70px 0 50px 0;
+.copyright {
+  margin: 20% 0 14% 0;
 }
 .copyright p:last-child {
-display: none;
+  display: none;
 }
 /* Desktop version */
 @media screen and (min-width: 550px) {
-  header, main, footer {
-    padding: 0;
-    margin: 75px;
-  }
   .top {
     width: 300px;
     display: flex;
@@ -278,17 +274,16 @@ display: none;
     color: #555555;
     font-size: 20px;
     text-decoration: none;
-    }
-    .top a:last-child {
-      flex-basis: 76px;
-      color: #FF3998;
-    }
+  }
+  .top a:last-child {
+    flex-basis: 76px;
+    color: #ff3998;
+  }
   .hamburger_menu {
     display: none;
   }
   .sign_up {
     width: 100%;
-    margin-top: 150px;
     display: flex;
     justify-content: space-between;
   }
@@ -303,7 +298,6 @@ display: none;
   .sign_up_left p {
     width: 55%;
     min-width: 280px;
-    margin-bottom: 40px;
   }
   .NFT_example {
     display: block;
@@ -315,52 +309,43 @@ display: none;
   }
   .background {
     width: 100%;
+    margin: 0;
     border-radius: 15px;
     background-position: 1px;
+    background-size: cover;
     background-image: url(/Atsiskaitymas_NFT_landing/assets/background.svg);
     padding: 150px 0px 10px 0px;
   }
-  .background p{
-    padding-left: 50px;
+  .background p {
+    padding-left: 5%;
   }
-  .background p:last-child{
-    padding-bottom: 50px;
+  .background p:last-child {
+    padding-bottom: 4%;
   }
-  .company {  
-    width: 97%;
-    padding: 0;
-    margin: 90px 0;
+  .opendoor {
+    display: block;
   }
-  .section_text p {
-   margin-left: 0px;
+  .boomerang,
+  .opendoor,
+  .blimp,
+  .qrco,
+  .droplet {
+    width: 180px;
   }
   .NFT_line_up {
-    padding-bottom: 75px;
     display: flex;
     justify-content: space-between;
   }
-  .NFT_style {
-    margin: 25px 5px 25px 0px;
-  }
   .NFT_line_up div:last-child {
     margin-right: 0px;
-  }
-  .opendoor {
-  display: block;
-  }
-  .boomerang {
-    width: 180px;
-    height: 35px;
-    padding: 5px 15px 5px 0;
-    align-content: flex-start;
   }
   .line {
     display: none;
   }
   footer .sign_up {
+    margin-top: 5%;
     display: flex;
-    margin-top: 0;
-    padding-top: 75px;
+    padding-top: 5%;
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
   }
@@ -372,13 +357,13 @@ display: none;
   }
   footer .sign_up p {
     width: 80%;
-    margin-bottom: 45px;
+    margin-bottom: 9%;
   }
-  footer .sign_up_left{
+  footer .sign_up_left {
     flex: auto;
     align-self: center;
   }
-  footer .sign_up div:last-child{
+  footer .sign_up div:last-child {
     width: 50%;
     align-self: flex-end;
   }
@@ -391,25 +376,27 @@ display: none;
     min-width: 182px;
     max-width: 240px;
     height: auto;
+    padding-top: 0;
     margin: -30px auto -1px auto;
   }
-  footer nav {
-    padding-top: 75px;
+  .nav_right{
+    margin: 5% 0;
   }
   .nav_right div:last-child {
-    margin:0;
+    margin: 0;
   }
   .copyright {
+    margin: 5% 0;
     display: flex;
     justify-content: space-between;
   }
   .copyright p:last-child {
     display: block;
-    }
   }
-  @media screen and (min-width: 900px) {
-    nav {
-      flex-direction: row;
-      align-items: center;
-    } 
+}
+@media screen and (min-width: 900px) {
+  nav {
+    flex-direction: row;
+    align-items: center;
   }
+}
